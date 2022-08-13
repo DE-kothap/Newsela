@@ -1,0 +1,32 @@
+--Number of claims recorded for single cord_id
+SELECT cord_uid,count(claim_uid) count_claim_id
+from claims_data
+group by cord_uid;
+
+--check if Claim_id is unique
+SELECT claim_uid ,count(cord_uid) count_claim_id
+from claims_data
+group by claim_uid
+having count(cord_uid)>1;
+
+SELECT cord_uid,publish_time
+from cord_data
+where date_part('year',publish_time)='2022';
+
+--Number of publishcations in an year
+SELECT date_part('year',publish_time),count(cord_uid)
+from cord_data
+group by date_part('year',publish_time)
+;
+
+--Number of authors worked on a paper
+SELECT Title,authors_count
+from cord_data
+;
+
+--Number of authors worked on a paper in a year
+SELECT date_part('year',publish_time),count(authors_count)
+from cord_data
+group by date_part('year',publish_time)
+;
+

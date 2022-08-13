@@ -1,0 +1,15 @@
+DEBUG:root:2022-08-12 22:28:13.944638
+(203248, 10)
+DEBUG:root:2022-08-12 22:28:18.783210
+2    Blindness behaviour in an epidemic
+3    Blindness behaviour in an epidemic
+Name: title, dtype: object
+/Users/chinnu/PycharmProjects/newselaDataLoad/venv/lib/python3.9/site-packages/pandas/core/arrays/datetimes.py:2224: FutureWarning: The parsing of 'now' in pd.to_datetime without `utc=True` is deprecated. In a future version, this will match Timestamp('now') and Timestamp.now()
+  result, tz_parsed = tslib.array_to_datetime(
+(48699, 8)
+(48699, 8)
+connection successful
+insert successful into cords table
+insert successful into claims table
+INFO:root:time elapsed to run job33536.76509857178 milli seconds
+33536.76509857178
